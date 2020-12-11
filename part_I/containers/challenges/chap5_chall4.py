@@ -1,10 +1,5 @@
-me = {
-    "height": "6",
-    "fav_color": "red",
-    "fav_author": "Orwell"
-}
-
-answer = input("Type height, fav_color or fav_author")
-if answer in me:
-    result = me[answer]
-    print(result)
+personal_info = {"height":"168cm",
+                 "Fav_Color":"Black",
+                 "Fav_Author":"Dale Carnegie"}
+question = input("Type 'height' or 'Fav_Color' or 'Fav_Author' to know about me: ")
+print(personal_info.get(question))
